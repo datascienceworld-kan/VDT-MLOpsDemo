@@ -1,0 +1,12 @@
+name: mlflowpipeline
+conda_env: conda.yaml
+entry_points:
+  main:
+    parameters:
+      hydra_config:
+        type: str
+        default: ''
+    command: python run.py $(echo {hydra_config})
+
+
+  

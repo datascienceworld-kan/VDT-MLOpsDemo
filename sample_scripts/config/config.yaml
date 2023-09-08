@@ -1,0 +1,13 @@
+data:
+  train_path: s3://gunmlartifacts/datalake/raw_zone/train.csv 
+  test_path: s3://gunmlartifacts/datalake/raw_zone/train.csv 
+  landing_zone_path: s3://gunmlartifacts/datalake/landing_zone/  
+  validated_train_path: s3://gunmlartifacts/datalake/landing_zone/train.csv 
+  x_path: s3://gunmlartifacts/feature_store/X.npy 
+  y_path: s3://gunmlartifacts/feature_store/y.npy 
+  n_estimators: 200
+  max_depth: 15
+  n_jobs: -1
+mlflow:
+  tracking_uri: 'http://127.0.0.1:5000'
+  experiment_name: "housepricing_rf"

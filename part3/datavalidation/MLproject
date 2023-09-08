@@ -1,0 +1,15 @@
+name: datavalidation
+conda_env: conda.yaml
+entry_points:
+  main:
+    parameters:
+      train_path:
+        type: uri
+      test_path:
+        type: uri
+      landing_zone_path:
+        type: uri
+    command: python run.py --train_path {train_path}
+                           --test_path {test_path}
+                           --landing_zone_path {landing_zone_path}
+                           

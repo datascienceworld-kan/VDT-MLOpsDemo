@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/gunnvantsaini/Library/CloudStorage/OneDrive-Personal/project_codes/content/mlops-yt/mlops_demos/part3/mlruns/0/feb2672f451145e980472afb597e8cfd/artifacts
+end_time: 1694149366669
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: feb2672f451145e980472afb597e8cfd
+run_name: bald-zebra-608
+run_uuid: feb2672f451145e980472afb597e8cfd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694149230528
+status: 4
+tags: []
+user_id: gunnvantsaini

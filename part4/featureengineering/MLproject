@@ -1,0 +1,12 @@
+name: dataengineering
+conda_env: conda.yaml
+entry_points:
+  main:
+    parameters:
+      validated_train_path:
+        type: uri
+      landing_zone_path:
+        type: uri
+    command: python run.py --validated_train_path {validated_train_path}
+                          --landing_zone_path {landing_zone_path}
+                        

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/gunnvantsaini/Library/CloudStorage/OneDrive-Personal/project_codes/content/mlops-yt/mlops_demos/part3/mlruns/0/4d48e842ea4943dfb89053623b2e482f/artifacts
+end_time: 1694149471419
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4d48e842ea4943dfb89053623b2e482f
+run_name: loud-whale-939
+run_uuid: 4d48e842ea4943dfb89053623b2e482f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694149454113
+status: 3
+tags: []
+user_id: gunnvantsaini

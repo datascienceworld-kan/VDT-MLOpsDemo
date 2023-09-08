@@ -1,0 +1,22 @@
+name: modeltraining
+conda_env: conda.yaml
+entry_points:
+  main:
+    parameters:
+      x_path:
+        type: uri
+      y_path:
+        type: uri
+      n_estimators:
+        type: float
+      max_depth:
+        type: float
+      n_jobs:
+        type: float
+    command: python run.py --x_path {x_path}
+                           --y_path {y_path}
+                           --n_estimators {n_estimators}
+                           --max_depth {max_depth}
+                           --n_jobs {n_jobs}
+                    
+                    
