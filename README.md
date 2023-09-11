@@ -65,6 +65,8 @@ Finally let’s see how to create a model training pipeline.
 
 ### Part 3: Orchestrating ml pipelines using mlflow
 
+**Note: All the codes used in part3 are [here](./part3/)**
+
 So far we’ve created individual components of a training pipeline. Let’s now see how we can run all these components together using mlfow acting as an orchestrator. So far we’ve created individual components of a training pipeline. Let’s now see how we can run all these components together using mlfow acting as an orchestrator. 
 
 <div align="left">
@@ -97,7 +99,7 @@ Let’s do the same exercise with our feature engineering component.
       </a>
 </div>
 
-Let’s finally integrate the model training component into our training pipeline workflow.
+Let’s now integrate the model training component into our training pipeline workflow.
 
 <div align="left">
       <a href="https://www.youtube.com/watch?v=5yLzZikS15k">
@@ -114,6 +116,8 @@ Finally lets see how to run all these components one after the other using mlflo
 </div>
 
 ### Part4: Tracking model experiments and runs using mlflow
+
+**Note: All the codes used in part4 are [here](./part4/)**  
 
 Mlflow not just acts as an orchestrator of training pipeline but it can also act as a repository of model experiments that one does. It can be used to store model artefacts, hyperparameters, accuracy metrics and even training datasets as well. This gives us the ability to version control training runs as well and not just our model training code.
 

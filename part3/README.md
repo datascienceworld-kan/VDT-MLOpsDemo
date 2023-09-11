@@ -45,7 +45,7 @@ To run this component following command will be used
 
 ```shell
 cd featureengineering
-mlflow run . -P validated_train_path=s3://gunmlartifacts/datalake/landing_zone/train.csv -P landing_zone_path=s3://gunmlartifacts/datalake/landing_zone/
+mlflow run . -P validated_train_path=s3://gunmlartifacts/datalake/landing_zone/train.csv -P feature_store_path=s3://gunmlartifacts/datalake/landing_zone/
 ```
 *You might want to change the paths, to paths on your s3 drive.*
 
