@@ -5,8 +5,8 @@ entry_points:
     parameters:
       validated_train_path:
         type: uri
-      landing_zone_path:
+      feature_store_path:
         type: uri
     command: python run.py --validated_train_path {validated_train_path}
-                          --landing_zone_path {landing_zone_path}
+                          --feature_store_path {feature_store_path}
                         

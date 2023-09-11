@@ -9,7 +9,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--validated_train_path",
                     type=str,
                     help="path to validated train file")
-parser.add_argument("--landing_zone_path",
+parser.add_argument("--feature_store_path",
                     type=str,
                     help="path to landing zone base directory")
 
@@ -23,8 +23,8 @@ def main(args):
     df = pd.read_csv(args.validated_train_path)
     X = df.drop(['id','booking_status'],axis=1).values
     y = df['booking_status'].values
-    load_s3(os.path.join(args.landing_zone_path,"X.npy"),X)
-    load_s3(os.path.join(args.landing_zone_path,"y.npy"),y)
+    load_s3(os.path.join(args.feature_store_path,"X.npy"),X)
+    load_s3(os.path.join(args.feature_store_path,"y.npy"),y)
     logging.info("Saved data engineered artifacts")
 
 if __name__=="__main__":

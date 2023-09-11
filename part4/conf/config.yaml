@@ -3,6 +3,7 @@ data:
   test_path: s3://gunmlartifacts/datalake/raw_zone/train.csv #${hydra:runtime.cwd}/../raw_data/test.csv
   landing_zone_path: s3://gunmlartifacts/datalake/landing_zone/  #${hydra:runtime.cwd}/../s3_data
   validated_train_path: s3://gunmlartifacts/datalake/landing_zone/train.csv #${hydra:runtime.cwd}/../s3_data/train.csv
+  feature_store_path: s3://gunmlartifacts/feature_store
   x_path: s3://gunmlartifacts/feature_store/X.npy #${hydra:runtime.cwd}/../s3_data/X.npy
   y_path: s3://gunmlartifacts/feature_store/y.npy #${hydra:runtime.cwd}/../s3_data/y.npy
 hyperparams:
