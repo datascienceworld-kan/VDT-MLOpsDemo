@@ -1,6 +1,6 @@
 ## Mlops: A primer on creating robust model training pipelines
 
-This repository contains code demos and videos for my youtube video series [here]() on mlops. You can use this repo to follow along the video series. 
+This repository contains code demos and videos for my youtube video series [here](https://www.youtube.com/watch?v=fM_4jWS0w00&list=PLH4UpMDxt47lN-vfaNtLrR0Kt3gK48QB5&index=1) on mlops. You can use this repo to follow along the video series. 
 
 ## Introduction:
 
