@@ -37,11 +37,13 @@ Let’s first look at how to create a data ingestion pipeline. We will assume th
 
 The next part is to build a feature engineering pipeline. Let’s look at the next video and see what principles can be followed to create a feature engineering pipeline. 
 
-[![Video 4](https://i9.ytimg.com/vi/xDoiWSHs7Y8/mq1.jpg?sqp=CLyK9KgG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLC7CJVF33jgMlkqoEs5gaRbTchAVA)](https://www.youtube.com/watch?v=xDoiWSHs7Y8)
+[![Video 4](https://i9.ytimg.com/vi/xDoiWSHs7Y8/mq1.jpg?sqp=CLyK9KgG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLC7CJVF33jgMlkqoEs5gaRbTchAVA)](https://www.youtube.com/watch?v=xDoiWSHs7Y8 "Video 4")
 
 Finally let’s see how to create a model training pipeline.
 
 [![Video 5](https://i9.ytimg.com/vi/zffaeWPl_bc/mq1.jpg?sqp=CLyK9KgG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLDoO_RoVHpdULNI5ECUzpTBltV1Zg)](https://youtu.be/zffaeWPl_bc)
+
+
 
 ### Part 3: Orchestrating ml pipelines using mlflow
 
