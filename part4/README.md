@@ -39,3 +39,5 @@ To run our final project we will need to do the following:
 export MLFLOW_TRACKING_URI=http://127.0.0.1:5000
 mlflow run . --experiment-name=hotel_occupancy
 ```
+
+Also notice the only changes in `part4/modeltraining/run.py` are the inclusion of `mlflow.log()` statements compared `part3/modeltraining/run.py`
