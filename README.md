@@ -59,35 +59,35 @@ Now that we know that in order to package everything together, we need to use th
 
 Once we have the data ingestion component, let’s see how we can run it using mlflow.
 
-<div align="left">
-      <a href="https://www.youtube.com/watch?v=5yLzZikS15k">
-         <img src="https://img.youtube.com/vi/5yLzZikS15k/0.jpg" style="width:50%;">
-      </a>
-</div>
+[![Video 8](https://i9.ytimg.com/vi/14TSmbLB94o/mq2.jpg?sqp=CPCa9KgG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGF4gXiheMA8%3D&rs=AOn4CLAEEggqVXrmPrRRrMSRzqnvVA6YvA&retry=4)](https://youtu.be/14TSmbLB94o)
 
 Let’s do the same exercise with our feature engineering component.
 
-<div align="left">
-      <a href="https://www.youtube.com/watch?v=5yLzZikS15k">
-         <img src="https://img.youtube.com/vi/5yLzZikS15k/0.jpg" style="width:50%;">
-      </a>
-</div>
+[![Video 9](https://i9.ytimg.com/vi/J1gWyKBJ8Ew/mq1.jpg?sqp=CMif9KgG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLCTmyNWJ4u_hS2wbkdfHcVfwrT6Yg)](https://youtu.be/J1gWyKBJ8Ew)
 
 Let’s now integrate the model training component into our training pipeline workflow.
 
-<div align="left">
-      <a href="https://www.youtube.com/watch?v=5yLzZikS15k">
-         <img src="https://img.youtube.com/vi/5yLzZikS15k/0.jpg" style="width:50%;">
-      </a>
-</div>
+[![Video 10](https://i9.ytimg.com/vi/lRZubYQ1SzQ/mq1.jpg?sqp=CMif9KgG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLCjjOVRy7sZlXIYODOEBklZXgKqqg)](https://youtu.be/lRZubYQ1SzQ)
 
-Finally lets see how to run all these components one after the other using mlflow and let’s also see how to also manage the commandline arguments for each of these components
+Now in the videos below we will see how:
+1. Run one component after the other
+2. Remove the need to manually specify commandline arguments.
 
-<div align="left">
-      <a href="https://www.youtube.com/watch?v=5yLzZikS15k">
-         <img src="https://img.youtube.com/vi/5yLzZikS15k/0.jpg" style="width:50%;">
-      </a>
-</div>
+In the video below let's see how can we make the training components run one after the other
+
+[![Video 11a](https://i9.ytimg.com/vi/hAOefBEzD0w/mq1.jpg?sqp=CPSh9KgG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLBoElda46PRhvENpfYmBAzoRpm9Rw)](https://youtu.be/hAOefBEzD0w)
+
+Now lets see how can we use mlflow's python client to run the components in our pipeline.
+
+[![Video 11b](https://i9.ytimg.com/vi/gu_R6c30lmE/mq1.jpg?sqp=CKCk9KgG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGcgZyhnMA8=&rs=AOn4CLD9Ejt7ZTgNK4877PkOpHgJuzqcdw)](https://youtu.be/gu_R6c30lmE)
+
+Let's complete writing the run.py file and run all the components together
+
+[![Video 11c](https://i9.ytimg.com/vi/rtlm85u8xwk/mq1.jpg?sqp=CMym9KgG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLDRBTqLQ47HCY1nOZxvSWo9Fhekwg)](https://youtu.be/rtlm85u8xwk)
+
+Now let's see how can we use hydra a configuration management system to handle the configurations used in the model training pipeline
+
+[![Video 11d](https://i9.ytimg.com/vi/BOY6kxbtzLU/mq1.jpg?sqp=CPio9KgG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLCu5LDTWeZVJeu0g5GQZ5SfZtcX9A)](https://youtu.be/BOY6kxbtzLU)
 
 ### Part4: Tracking model experiments and runs using mlflow
 
