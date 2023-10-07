@@ -89,6 +89,14 @@ Now let's see how can we use hydra a configuration management system to handle t
 
 [![Video 11d](https://i9.ytimg.com/vi/BOY6kxbtzLU/mq1.jpg?sqp=CPio9KgG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLCu5LDTWeZVJeu0g5GQZ5SfZtcX9A)](https://youtu.be/BOY6kxbtzLU)
 
+Now lets see how to remove all the hardcoded parameters in each of our components with configurations managed by the hydra.
+
+[![Video 11e](https://i9.ytimg.com/vi/GytDuRyj_E0/mq2.jpg?sqp=CKSv-6gG-oaymwEmCMACELQB8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGggaChoMA8%3D&rs=AOn4CLBiFNhZzz4O4vEnjGqYXmswPMfavA&retry=4)](https://youtu.be/GytDuRyj_E0)
+
+Now as a last step, lets package our `run.py` file also as an mlproject. 
+
+[![Video 11f](https://i9.ytimg.com/vi/qQNntfA8tLw/mq2.jpg?sqp=CNCx-6gG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLCJxn8H0igUK7_bzo1sGgdG69QxkA)](https://youtu.be/qQNntfA8tLw)
+
 ### Part4: Tracking model experiments and runs using mlflow
 
 **Note: All the codes used in part4 are [here](./part4/)**  
@@ -97,40 +105,20 @@ Mlflow not just acts as an orchestrator of training pipeline but it can also act
 
 Let’s look at the video below to get an overview of what experiment tracking means and why that might be of interest to us.
 
-<div align="left">
-      <a href="https://www.youtube.com/watch?v=5yLzZikS15k">
-         <img src="https://img.youtube.com/vi/5yLzZikS15k/0.jpg" style="width:50%;">
-      </a>
-</div>
+[![Video 12](https://i9.ytimg.com/vi/oH_k89pJkfI/mq1.jpg?sqp=CNCx-6gG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLCuE3kWQBn0be8IoC1xQCgoMxaprw)](https://youtu.be/oH_k89pJkfI)
 
 Now once we understand what experiment tracking is and why it might be of importance to us, let's see how mlflow tracking server works.
 
-<div align="left">
-      <a href="https://www.youtube.com/watch?v=5yLzZikS15k">
-         <img src="https://img.youtube.com/vi/5yLzZikS15k/0.jpg" style="width:50%;">
-      </a>
-</div>
+[![Video 13](https://i9.ytimg.com/vi/ryUPBjRVNmQ/mq1.jpg?sqp=CPyz-6gG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLA0xFRfEuOy4T0NO1qNTTINZs1YtA)](https://youtu.be/ryUPBjRVNmQ)
 
 Now that we know the various modes in which an mlflow tracking server can run. Let’s now create a tracking server with s3 as artefact storage and postgres as metric store
 
-<div align="left">
-      <a href="https://www.youtube.com/watch?v=5yLzZikS15k">
-         <img src="https://img.youtube.com/vi/5yLzZikS15k/0.jpg" style="width:50%;">
-      </a>
-</div>
+[![Video 14](https://i9.ytimg.com/vi/KvKXSgieSFE/mq2.jpg?sqp=CPyz-6gG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEggZShUMA8=&rs=AOn4CLCBSiFW6i5TRoYB6yI7dEp0x3gY1A)](https://youtu.be/KvKXSgieSFE)
 
 Now that we have finally created the mlflow tracking server. Let’s see how to use mlflow tracking server to log model artefacts and model metrics
 
-<div align="left">
-      <a href="https://www.youtube.com/watch?v=5yLzZikS15k">
-         <img src="https://img.youtube.com/vi/5yLzZikS15k/0.jpg" style="width:50%;">
-      </a>
-</div>
+[![Video 15](https://i9.ytimg.com/vi/TvoDiWBMNFg/mq3.jpg?sqp=CPyz-6gG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGcgZyhnMA8=&rs=AOn4CLBebqhfxZPWMSI3nZWotAejT1qpLA)](https://youtu.be/TvoDiWBMNFg)
 
 Finally let’s make changes to our training pipeline code and include experiment tracking feature.
 
-<div align="left">
-      <a href="https://www.youtube.com/watch?v=5yLzZikS15k">
-         <img src="https://img.youtube.com/vi/5yLzZikS15k/0.jpg" style="width:50%;">
-      </a>
-</div>
+[![]()]()
