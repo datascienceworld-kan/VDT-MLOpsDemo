@@ -28,5 +28,6 @@ def main(args):
     logging.info("Saved data engineered artifacts")
 
 if __name__=="__main__":
+    # mlflow run . -P validated_train_path=file:../../raw_data/train.csv -P feature_store_path=file:../../feature_store2
     args = parser.parse_args()
     main(args)

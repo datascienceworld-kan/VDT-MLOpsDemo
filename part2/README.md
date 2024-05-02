@@ -14,10 +14,10 @@ Before you run the components given below you will need to setup s3 buckets on a
 ```shell
 datalake:
     - landing_zone:
-    - raw_zone:
+    - raw_data:
 feature_store
 ```
-`datalake/raw_zone` will store the data coming from a data engineering pipeline. Our pipeline will not change this data at this location but will merely read this data.
+`datalake/raw_data` will store the data coming from a data engineering pipeline. Our pipeline will not change this data at this location but will merely read this data.
 
 `datalake/landing_zone` will store data validated by our data validation component.
 
@@ -35,17 +35,24 @@ To run this component follow the following commands
 
 ```shell
 cd datavalidation
-conda env create --name conda.yaml
+conda env create -f conda.yaml
 conda activate datavalidation
-python run.py --train_path s3://gunmlartifacts/datalake/raw_zone/train.csv --test_path s3://gunmlartifacts/datalake/raw_zone/test.csv --landing_zone_path s3://gunmlartifacts/datalake/landing_zone/
+python run.py --train_path s3://datascienceworld.kan/datalake/raw_data/train.csv --test_path s3://datascienceworld.kan/datalake/raw_data/test.csv --landing_zone_path s3://datascienceworld.kan/datalake/landing_zone/
 ```
+
+Check validated data in landing_zone
+
+```shell
+aws s3 ls s3://datascienceworld.kan/datalake/landing_zone
+```
+
 Since the s3 drive is not public you may need to change the above commands as follows:
 
 ```shell
 cd datavalidation
 conda env create --name conda.yaml
 conda activate datavalidation
-python run.py --train_path s3://{your_bucket}/raw_zone/train.csv --test_path s3://{your_bucket}/raw_zone/test.csv --landing_zone_path s3://{your_bucket}/landing_zone/
+python run.py --train_path s3://{your_bucket}/raw_data/train.csv --test_path s3://{your_bucket}/raw_data/test.csv --landing_zone_path s3://{your_bucket}/landing_zone/
 ```
 
 2. [Feature engineering](./dataengineering/)
@@ -58,7 +65,7 @@ Run the following commands
 cd featureengineering
 conda env create -f conda.yaml
 conda activate featureengineering
-python run.py --validated_train_path s3://gunmlartifacts/datalake/landing_zone/train.csv --feature_store_path s3://gunmlartifacts/feature_store/
+python run.py --validated_train_path s3://datascienceworld.kan/datalake/landing_zone/train.csv --feature_store_path s3://datascienceworld.kan/feature_store/
 ```
 You will need to change the s3 paths with paths relevant to your data
 
@@ -69,7 +76,7 @@ This component does model training. It pulls data from the feature store on s3 a
 Run the following commands to use this component.
 
 ```shell
-python run.py --x_path s3://gunmlartifacts/feature_store/X.npy --y_path s3://gunmlartifacts/feature_store/y.npy --n_estimators 120 --max_depth 15 --n_jobs -1
+python run.py --x_path s3://datascienceworld.kan/feature_store/X.npy --y_path s3://datascienceworld.kan/feature_store/y.npy --n_estimators 120 --max_depth 15 --n_jobs -1
 ```
 
 You will need to change the s3 paths accordingly

@@ -6,6 +6,7 @@ __pycache__/
 # Mlflow directories
 *mlruns
 *outputs
+*mlartifacts
 
 # C extensions
 *.so

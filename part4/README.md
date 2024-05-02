@@ -1,4 +1,5 @@
 ## Preparing tracking infrastructure
+https://mlflow.org/docs/latest/tracking/tutorials/remote-server.html
 
 1. Create s3 buckets
 2. Run a postgres sql server as metric store:
@@ -22,10 +23,15 @@ Once you hit enter just give the password, in this case its `gun125`. Once you a
 CREATE DATABASE mlflow;
 ```
 
+check the list of databases inside docker terminal (access to terminal by docker desktop):
+```
+\l
+```
+
 Finally you can run the mlflow tracking server as given below
 
 ```shell
-mlflow server --backend-store-uri postgresql://postgres:gun125@localhost:5432/mlflow --default-artifact-root s3://gunmlartifacts/project1/ --no-serve-artifacts
+mlflow server --backend-store-uri postgresql://postgres:gun125@localhost:5432/mlflow --default-artifact-root s3://datascienceworld.kan/project1/ --no-serve-artifacts
 ```
 
 You can then point your browser to `localhost:5000` to see the tracking server in action.

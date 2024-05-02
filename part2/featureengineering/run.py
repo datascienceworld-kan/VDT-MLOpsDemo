@@ -14,9 +14,13 @@ parser.add_argument("--feature_store_path",
                     help="path to landing zone base directory")
 
 def load_s3(s3_path,arr):
+    # Save on s3 storage
     s3 = S3FileSystem()
     with s3.open(s3_path, 'wb') as f:
         f.write(pickle.dumps(arr))
+    # In case we do not have aws, let's simulate by saving to local feature_store
+    # with open(s3_path, 'wb') as f:
+    #     f.write(pickle.dumps(arr))
 
 def main(args):
     logging.info("Reading validated data")

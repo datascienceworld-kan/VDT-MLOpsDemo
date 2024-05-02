@@ -31,9 +31,13 @@ We can run just this component using mlflow by executing the commands as given b
 
 ```shell
 cd datavalidation
-mlflow run . -P train_path=s3://gunmlartifacts/datalake/raw_zone/train.csv -P test_path=s3://gunmlartifacts/datalake/raw_zone/test.csv -P landing_zone_path=s3://gunmlartifacts/datalake/landing_zone/
+mlflow run . -P train_path=s3://datascienceworld.kan/datalake/raw_data/train.csv -P test_path=s3://datascienceworld.kan/datalake/raw_data/test.csv -P landing_zone_path=s3://datascienceworld.kan/datalake/landing_zone/
 ```
 *You might want to change the paths, to paths on your s3 drive.*
+
+```shell
+mlflow run . -P train_path=s3://{your_s3_bucket}/datalake/raw_data/train.csv -P test_path=s3://{your_s3_bucket}/datalake/raw_data/test.csv -P landing_zone_path=s3://{your_s3_bucket}/datalake/landing_zone/
+```
 
 The above takes care of creating the relevant conda environment and running our code with the correct set of dependencies.
 
@@ -45,8 +49,9 @@ To run this component following command will be used
 
 ```shell
 cd featureengineering
-mlflow run . -P validated_train_path=s3://gunmlartifacts/datalake/landing_zone/train.csv -P feature_store_path=s3://gunmlartifacts/feature_store
+mlflow run . -P validated_train_path=s3://datascienceworld.kan/datalake/landing_zone/train.csv -P feature_store_path=s3://datascienceworld.kan/feature_store
 ```
+
 *You might want to change the paths, to paths on your s3 drive.*
 
 3. [Model-training](./modeltraining/s)
@@ -55,7 +60,7 @@ Lastly we will include an `MLproject` file for the model training component. We 
 
 ```shell
 cd modeltraining
-mlflow run . -P x_path=s3://gunmlartifacts/feature_store/X.npy -P y_path=s3://gunmlartifacts/feature_store/y.npy -P n_estimators=120 -P max_depth=15 -P n_jobs=-1
+mlflow run . -P x_path=s3://datascienceworld.kan/feature_store/X.npy -P y_path=s3://datascienceworld.kan/feature_store/y.npy -P n_estimators=120 -P max_depth=15 -P n_jobs=-1
 ```
 *You might want to change the paths, to paths on your s3 drive.*
 
