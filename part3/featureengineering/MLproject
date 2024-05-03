@@ -1,12 +1,12 @@
-  name: dataengineering
-  conda_env: conda.yaml
-  entry_points:
-    main:
-      parameters:
-        validated_train_path:
-          type: uri
-        feature_store_path:
-          type: uri
-      command: python run.py --validated_train_path {validated_train_path}
-                            --feature_store_path {feature_store_path}
+name: dataengineering
+conda_env: conda.yaml
+entry_points:
+  main:
+    parameters:
+      validated_train_path:
+        type: uri
+      feature_store_path:
+        type: uri
+    command: python run.py --validated_train_path {validated_train_path}
+                          --feature_store_path {feature_store_path}
                           

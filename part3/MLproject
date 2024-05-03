@@ -7,6 +7,3 @@ entry_points:
         type: str
         default: ''
     command: python run.py $(echo {hydra_config})
-
-
-  

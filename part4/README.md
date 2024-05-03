@@ -1,5 +1,11 @@
 ## Preparing tracking infrastructure
+
+- The list of models of tracking remote servers:
+https://mlflow.org/docs/latest/tracking.html#other-configuration-with-mlflow-tracking-server
+
+- Remote server on S3 storage and Postgres SQL
 https://mlflow.org/docs/latest/tracking/tutorials/remote-server.html
+
 
 1. Create s3 buckets
 2. Run a postgres sql server as metric store:
